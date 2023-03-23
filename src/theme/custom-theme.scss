@@ -1,0 +1,38 @@
+// Custom Theming for Angular Material
+
+@use "@angular/material" as mat;
+@import "./variables.scss";
+
+@include mat.core();
+
+$divertecno-primary: mat.define-palette($custom-primary);
+$divertecno-accent: mat.define-palette($custom-accent);
+$divertecno-warn: mat.define-palette(mat.$red-palette);
+$divertecno-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $divertecno-primary,
+      accent: $divertecno-accent,
+      warn: $divertecno-warn,
+    ),
+  )
+);
+
+$divertecno-dark-primary: mat.define-palette($custom-primary);
+$divertecno-dark-accent: mat.define-palette(mat.$grey-palette);
+$divertecno-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $divertecno-dark-primary,
+      accent: $divertecno-dark-accent,
+    ),
+  )
+);
+
+.dark {
+  @include mat.all-component-themes($divertecno-dark-theme);
+}
+
+.light {
+  @include mat.all-component-themes($divertecno-theme);
+}

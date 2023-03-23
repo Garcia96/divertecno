@@ -1,0 +1,15 @@
+<swiper [config]="config">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let slide of slides.data">
+      <h2 class="slide-name">{{ slide.name }}</h2>
+      <a [routerLink]="['/vr-games', slide.id]"
+        ><img [src]="slide.img" [alt]="slide.name"
+      /></a>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</swiper>

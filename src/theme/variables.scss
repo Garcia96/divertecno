@@ -1,0 +1,51 @@
+@import "./custom-fonts";
+
+$custom-primary: (
+  50: #e4f1fa,
+  100: #bedcf4,
+  200: #98c6ec,
+  300: #74b0e3,
+  400: #5c9fde,
+  500: #4a90d8,
+  600: #4482cb,
+  700: #3c71b9,
+  800: #3561a7,
+  900: #264489,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$custom-accent: (
+  50: #eaeafb,
+  100: #c9caf4,
+  200: #a5a7ed,
+  300: #8084e6,
+  400: #6467e0,
+  500: #4a4ad8,
+  600: #4541cd,
+  700: #3c36c0,
+  800: #342ab5,
+  900: #260fa2,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
