@@ -1,0 +1,44 @@
+.vr-games-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1rem;
+
+  .sidebar-container {
+    display: block;
+    width: 20%;
+    position: sticky;
+    top: 81px;
+    height: 50vh;
+    overflow: auto;
+  }
+
+  .main-container {
+    width: 80%;
+
+    .game {
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .vr-games-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+
+    .sidebar-container {
+      display: none;
+    }
+
+    .main-container {
+      width: 100%;
+    }
+  }
+}

@@ -31,3 +31,19 @@
     box-shadow: 0 0 20px #1f1f1f;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .content > :last-child {
+    margin-top: 2rem;
+  }
+}

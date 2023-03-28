@@ -5,6 +5,7 @@ import { ComponentsModule } from '../components/components.module';
 import { HomeComponent } from './home/home.component';
 import { VrGamesComponent } from './vr-games/vr-games.component';
 import { VrGameComponent } from './vr-games/vr-game/vr-game.component';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    CommonModule,
     RouterModule.forChild(routes),
     AngularMaterialModule,
     ComponentsModule,

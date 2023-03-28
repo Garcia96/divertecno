@@ -1,1 +1,30 @@
-<p>vr-games works!</p>
+<div class="vr-games-container">
+  <div class="sidebar-container">
+    <mat-selection-list [multiple]="false">
+      <mat-list-option
+        *ngFor="let game of gamesData.data"
+        routerLink="./"
+        [fragment]="game.target"
+      >
+        <!-- <a [href]="'#/vr-games#' + game.target">
+          {{ game.name }}
+        </a> -->
+        {{ game.name }}
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+  <div class="main-container">
+    <div class="container">
+      <div class="game" *ngFor="let game of gamesData.data">
+        <h1 [id]="game.target">
+          {{ game.name }}
+        </h1>
+        <p>{{ game.description }}</p>
+        <img [src]="game.img" [alt]="game.name" />
+        <p><b>Tipo: </b>{{ game.type }}</p>
+        <p><b>Dificultad: </b>{{ game.level }}</p>
+        <p><b>Género: </b>{{ game.genre }}</p>
+      </div>
+    </div>
+  </div>
+</div>
