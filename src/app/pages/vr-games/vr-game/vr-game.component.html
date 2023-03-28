@@ -1,1 +1,17 @@
-<p>asdasdasdasdasd</p>
+<div class="container">
+  <div class="game">
+    <h1
+      class="game-title-link"
+      routerLink="/vr-games"
+      [fragment]="gameData.target"
+      [id]="gameData.target"
+    >
+      {{ gameData.name }}
+    </h1>
+    <p>{{ gameData.description }}</p>
+    <img [src]="gameData.img" [alt]="gameData.name" />
+    <p><b>Tipo: </b>{{ gameData.type }}</p>
+    <p><b>Dificultad: </b>{{ gameData.level }}</p>
+    <p><b>Género: </b>{{ gameData.genre }}</p>
+  </div>
+</div>

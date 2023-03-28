@@ -1,0 +1,11 @@
+.game {
+  margin-bottom: 2rem;
+}
+img {
+  margin: auto;
+  width: 80%;
+}
+
+.game-title-link {
+  cursor: pointer;
+}

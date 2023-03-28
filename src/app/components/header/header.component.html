@@ -15,11 +15,13 @@
     <mat-icon
       *ngIf="configTheme.getTheme() === 'light'"
       (click)="configTheme.setTheme('dark')"
+      matTooltip="Dark theme"
       >bedtime</mat-icon
     >
     <mat-icon
       *ngIf="configTheme.getTheme() === 'dark'"
       (click)="configTheme.setTheme('light')"
+      matTooltip="Light theme"
       >brightness_5</mat-icon
     >
   </mat-toolbar>

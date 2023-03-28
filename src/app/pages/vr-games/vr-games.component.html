@@ -6,9 +6,6 @@
         routerLink="./"
         [fragment]="game.target"
       >
-        <!-- <a [href]="'#/vr-games#' + game.target">
-          {{ game.name }}
-        </a> -->
         {{ game.name }}
       </mat-list-option>
     </mat-selection-list>
@@ -16,7 +13,11 @@
   <div class="main-container">
     <div class="container">
       <div class="game" *ngFor="let game of gamesData.data">
-        <h1 [id]="game.target">
+        <h1
+          class="game-title-link"
+          [routerLink]="['/vr-games', game.id]"
+          [id]="game.target"
+        >
           {{ game.name }}
         </h1>
         <p>{{ game.description }}</p>
