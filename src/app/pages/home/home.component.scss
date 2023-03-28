@@ -1,18 +1,30 @@
 .homepage-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 1rem 5%;
+  margin-top: 3%;
+  width: 100%;
+
+  .service-container {
+    display: flex;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
 
   .category-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
 
     .mat-card {
       flex: 1 1 auto;
       margin: 5px;
     }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .category-container {
+    max-width: 80%;
   }
 }

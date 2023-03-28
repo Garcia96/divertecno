@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 80%;
+  }
+}

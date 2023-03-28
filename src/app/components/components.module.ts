@@ -5,16 +5,17 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { AngularMaterialModule } from '../angular-material.module';
 import { SliderComponent } from './slider/slider.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [HeaderComponent, SliderComponent],
+  declarations: [HeaderComponent, SliderComponent, FooterComponent],
   imports: [
     CommonModule,
     RouterModule,
     NgxUsefulSwiperModule,
     AngularMaterialModule,
   ],
-  exports: [HeaderComponent, SliderComponent],
+  exports: [HeaderComponent, SliderComponent, FooterComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ComponentsModule {}

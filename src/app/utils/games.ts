@@ -4,7 +4,7 @@ export class VrGames {
       data: [
         {
           id: 1,
-          name: 'Huper Dash',
+          name: 'Hyper Dash',
           description:
             'Juego de disparos en equipo con más de 5 modos de juego, muy rápido y con chat de voz',
           type: 'juego',

@@ -1,0 +1,33 @@
+#footer {
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  img {
+    margin: 20px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .facebook:hover {
+    box-shadow: 0 0 20px #3b5998;
+  }
+
+  .instagram:hover {
+    box-shadow: 0 0 20px #833ab4;
+  }
+
+  .tiktok:hover {
+    box-shadow: 0 0 20px #1f1f1f;
+  }
+}
