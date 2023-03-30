@@ -10,7 +10,7 @@ export class VrGames {
           type: 'juego',
           level: 'Avanzado',
           genre: ['Accion'],
-          img: '../../assets/img/vr_games/hyper_dash.png',
+          img: 'https://live.staticflickr.com/65535/52780846234_67e5790e3e_c.jpg',
           target: 'Hyper-Dash',
         },
         {
@@ -21,7 +21,7 @@ export class VrGames {
           type: 'experiencia',
           level: 'Principiante',
           genre: ['Aventura'],
-          img: '../../assets/img/vr_games/brink.png',
+          img: 'https://live.staticflickr.com/65535/52781067758_406e8b1f12_c.jpg',
           target: 'Brink-traveler',
         },
         {
@@ -32,7 +32,7 @@ export class VrGames {
           type: 'juego',
           level: 'Avanzado',
           genre: ['Simulación'],
-          img: '../../assets/img/vr_games/plank.png',
+          img: 'https://live.staticflickr.com/65535/52780063002_3554ab458d_c.jpg',
           target: 'Richies-plank',
         },
         {
@@ -43,7 +43,7 @@ export class VrGames {
           type: 'experiencia',
           level: 'Principiante',
           genre: ['Simulación'],
-          img: '../../assets/img/vr_games/jurassic_world.png',
+          img: 'https://live.staticflickr.com/65535/52780598361_4888b3c433_c.jpg',
           target: 'Jurassic-World',
         },
         {
@@ -54,7 +54,7 @@ export class VrGames {
           type: 'juego',
           level: 'Intermedio',
           genre: ['Acción'],
-          img: '../../assets/img/vr_games/blaston.png',
+          img: 'https://live.staticflickr.com/65535/52780063037_9088cd5a3a_c.jpg',
           target: 'Blaston',
         },
         {
@@ -65,7 +65,7 @@ export class VrGames {
           type: 'juego',
           level: 'Avanzado',
           genre: ['Acción'],
-          img: '../../assets/img/vr_games/vader.png',
+          img: 'https://live.staticflickr.com/65535/52781012250_219dff82cb_c.jpg',
           target: 'Vader-Inmortal',
         },
         {
@@ -76,7 +76,7 @@ export class VrGames {
           type: 'juego',
           level: 'Principiante',
           genre: ['Fantasía'],
-          img: '../../assets/img/vr_games/elixir.png',
+          img: 'https://live.staticflickr.com/65535/52780063017_2ca273c395_c.jpg',
           target: 'Elixir',
         },
         {
@@ -87,7 +87,7 @@ export class VrGames {
           type: 'experiencia',
           level: 'Principiante',
           genre: ['Video'],
-          img: '../../assets/img/vr_games/space.png',
+          img: 'https://live.staticflickr.com/65535/52780848924_2121e54f47_c.jpg',
           target: 'Space-Explorers',
         },
         {
@@ -98,7 +98,7 @@ export class VrGames {
           type: 'juego',
           level: 'Avanzado',
           genre: ['Terror'],
-          img: '../../assets/img/vr_games/drop_dead.png',
+          img: 'https://live.staticflickr.com/65535/52780063022_4a05df752f_c.jpg',
           target: 'Drop-Dead',
         },
         {
@@ -109,7 +109,7 @@ export class VrGames {
           type: 'juego',
           level: 'Intermedio',
           genre: ['Simulación'],
-          img: '../../assets/img/vr_games/job_simulator.png',
+          img: 'https://live.staticflickr.com/65535/52780848954_7661d2fb21_c.jpg',
           target: 'Job-Simulator',
         },
         {
@@ -120,7 +120,7 @@ export class VrGames {
           type: 'juego',
           level: 'Principiante',
           genre: ['Musical'],
-          img: '../../assets/img/vr_games/beat_saber.png',
+          img: 'https://live.staticflickr.com/65535/52780598426_23d61ecbe8_h.jpg',
           target: 'Beat-Saber',
         },
         {
@@ -131,7 +131,7 @@ export class VrGames {
           type: 'juego',
           level: 'Principiante',
           genre: ['Simulación'],
-          img: '../../assets/img/vr_games/roller_coaster.png',
+          img: 'https://live.staticflickr.com/65535/52780062987_6a121200ac_c.jpg',
           target: 'Epic-Roller-Coaster',
         },
       ],

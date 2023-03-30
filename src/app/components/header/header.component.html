@@ -1,28 +1,47 @@
 <header>
-  <mat-toolbar color="primary" class="mat-elevation-z2">
+  <mat-toolbar class="header" color="primary" class="mat-elevation-z2">
     <a routerLink="/home">
       <img
         src="../../../assets/img/logo_transparente.png"
-        width="160"
         alt="logo_divertecno"
       />
     </a>
     <span class="example-spacer"></span>
+    <div class="menu-web">
+      <ng-container *ngTemplateOutlet="headerButtons"></ng-container>
+    </div>
+    <div class="menu">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <ng-container *ngTemplateOutlet="headerButtons"></ng-container>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+</header>
+
+<ng-template #headerButtons>
+  <div class="headerButtons">
     <a routerLink="/vr-games" routerLinkActive="activebutton" mat-button
       >Juegos VR</a
     >
-    <a routerLink="" mat-button>Tecnología</a>
+    <a routerLink="/technology" routerLinkActive="activebutton" mat-button
+      >Tecnología</a
+    >
     <mat-icon
+      class="theme-icon"
       *ngIf="configTheme.getTheme() === 'light'"
       (click)="configTheme.setTheme('dark')"
       matTooltip="Dark theme"
       >bedtime</mat-icon
     >
     <mat-icon
+      class="theme-icon"
       *ngIf="configTheme.getTheme() === 'dark'"
       (click)="configTheme.setTheme('light')"
       matTooltip="Light theme"
       >brightness_5</mat-icon
     >
-  </mat-toolbar>
-</header>
+  </div>
+</ng-template>

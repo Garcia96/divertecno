@@ -20,11 +20,26 @@
       flex: 1 1 auto;
       margin: 5px;
     }
+    .pc-img {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 600px) {
   .category-container {
     max-width: 80%;
+    .pc-img {
+      img {
+        max-width: 50%;
+        margin: 0 25%;
+        transition: 0.5s;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }

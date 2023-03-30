@@ -1,0 +1,51 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.activebutton {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.theme-icon {
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+
+  .menu-web {
+    display: contents;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  img {
+    width: 180px;
+    margin-top: 8px;
+  }
+}
+
+.headerButtons {
+  display: contents;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    .menu-web {
+      display: none;
+    }
+    .menu {
+      display: flex;
+    }
+  }
+
+  .headerButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

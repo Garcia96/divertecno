@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { AngularMaterialModule } from '../angular-material.module';
 import { ComponentsModule } from '../components/components.module';
 import { HomeComponent } from './home/home.component';
 import { VrGamesComponent } from './vr-games/vr-games.component';
 import { VrGameComponent } from './vr-games/vr-game/vr-game.component';
-import { CommonModule } from '@angular/common';
+import { TechnologyComponent } from './technology/technology.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
     path: 'vr-games/:id',
     component: VrGameComponent,
   },
+  {
+    path: 'technology',
+    component: TechnologyComponent,
+  },
 ];
 
 @NgModule({
@@ -30,6 +35,11 @@ const routes: Routes = [
     ComponentsModule,
   ],
   exports: [RouterModule],
-  declarations: [HomeComponent, VrGamesComponent, VrGameComponent],
+  declarations: [
+    HomeComponent,
+    VrGamesComponent,
+    VrGameComponent,
+    TechnologyComponent,
+  ],
 })
 export class PagesRoutingModule {}

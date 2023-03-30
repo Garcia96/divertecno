@@ -16,16 +16,29 @@
     </p>
     <p>
       No esperes más para experimentar la emoción de la realidad virtual en
-      Diver Tecno. ¡Visítanos hoy y vive la aventura de tu vida!
+      Diver Tecno. ¡Visítanos hoy y vive la aventura virtual de tu vida!
     </p>
 
     <div class="category-container container">
       <mat-card>
-        <h2>Realidad Virtual</h2>
+        <h2 routerLink="/vr-games">Diversión</h2>
         <app-slider [slides]="gamesData" [duration]="3000"></app-slider>
       </mat-card>
       <mat-card>
-        <h2>Tecnología</h2>
+        <h2 routerLink="/technology">Tecnología</h2>
+        <p>
+          Nos enfocamos en proporcionarte componentes de alta calidad para que
+          puedas construir el computador de tus sueños. Ya sea que estés
+          interesado en juegos de alta definición, aplicaciones de productividad
+          o cualquier otra tarea intensiva en el rendimiento, tenemos lo que
+          necesitas para llevar tu experiencia informática al siguiente nivel.
+        </p>
+        <a class="pc-img" routerLink="/technology">
+          <img
+            src="https://live.staticflickr.com/65535/52780123452_75e26ccb09_b.jpg"
+            alt="computador gamer"
+          />
+        </a>
       </mat-card>
     </div>
   </div>
